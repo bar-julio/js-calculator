@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="container">
+            <div class="calculator card">
+                <div class="card-body">
+                    <div id="display" class="display"></div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('7')">7</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('8')">8</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('9')">9</button>
+                        </div>
+                        <div class="col-3">
+                            <!-- division: etiqueta button class btn y onclick a operate('/')-->
+                            <button class="btn btn-warning" onclick="operate('/')">/</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('4')">4</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('5')">5</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('6')">6</button>
+                        </div>
+                        <div class="col-3">
+                            <!-- multiplicacion: etiqueta button class btn y onclick a operate('*')-->
+                            <div>&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('1')">1</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('2')">2</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('3')">3</button>
+                        </div>
+                        <div class="col-3">
+                            <!-- resta: etiqueta button class btn y onclick a operate('-')-->
+                            <div>&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('0')">0</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="press('.')">.</button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-secondary" onclick="operate('%')">%</button>
+                        </div>
+                        <div class="col-3">
+                            <!-- suma: etiqueta button class btn y onclick a operate('+')-->
+                            <div>&nbsp;</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <button class="btn btn-danger" onclick="clearDisplay()">C</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-success" onclick="calculate()">=</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
